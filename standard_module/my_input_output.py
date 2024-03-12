@@ -36,7 +36,6 @@ def color_print(content: str, typ="normal", asc_control="0"):
     try:
         print(f"{color_code}{content}\033[{asc_control}m")
     except IOError as e:
-        # 异常处理，可以选择记录日志或者抛出更具体的异常
         print(f"Failed to print colored text: {e}")
         sys.exit(0)
 
@@ -70,5 +69,4 @@ def my_input(content, empty="no"):
             sys.exit(0)
         except IOError as e:
             color_print(f"输入过程中发生错误: {str(e)}", typ="error")
-            # 为了防止无限循环，此处可以选择退出或重新抛出异常
             sys.exit(1)
