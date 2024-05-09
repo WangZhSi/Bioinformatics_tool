@@ -4,7 +4,7 @@ import re
 import argparse
 #### info ####
 __author__ = 'wangzhsi'
-__mail__ = 'wangzsi@outlook.com'
+__mail__ = 'wang_zsi@outlook.com'
 __date__ = '20240104'
 __version__ = '1.0'
 #### main ####
