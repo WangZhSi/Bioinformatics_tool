@@ -1,4 +1,3 @@
-#!/annoroad/data1/software/install/Miniconda/Anaconda3-2021.05/envs/python3.7/bin/python3
 ##### import #####
 import re
 import argparse
