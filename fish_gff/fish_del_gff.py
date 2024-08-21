@@ -190,7 +190,7 @@ def checkmRNA(node, summary: dict, info: list, target: list, functype: str, keep
 def _checkInfoFish(info, common: list):
     out = ''
     for i in info:
-        if i['type'] == Type.gene:
+        if i['type'] == Type.gene or i['type'] == Type.pseudogene:
             out += i['line']
         elif i['id'] in common or i['parent'][0] in common:
             out += i['line']
@@ -200,7 +200,7 @@ def _checkInfoFish(info, common: list):
 def _checkInfoDel(info, common: list):
     out = ''
     for i in info:
-        if i['type'] == Type.gene:
+        if i['type'] == Type.gene or i['type'] == Type.pseudogene:
             out += i['line']
         elif i['id'] in common or i['parent'][0] in common:
             continue
