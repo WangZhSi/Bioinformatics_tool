@@ -53,6 +53,8 @@ cd source && cargo build --release
 
 • --chr_prefix _(optional)_: Filter sequences by prefix (e.g., chr).
 
+• --prefix _(optional)_: Prefix for output files.
+
 **Example**
 
 ```bash
