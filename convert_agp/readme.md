@@ -1,5 +1,5 @@
 Convert AGP files
-
+```bash
 options:
   -h, --help            show this help message and exit
 
@@ -30,3 +30,4 @@ Output order parameters:
   --nature              Reorder output in nature order: 1,2,3...10
   --sizeOrder           Rename chromosome by size.
   --prefix PREFIX       Prefix of rename chromosome by size, default = 'chr'
+```
